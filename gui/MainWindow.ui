@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1735</width>
+    <height>828</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:  #39494d;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QMainWindow{
+	background-color: #b3ad5b;
+}</string>
+   </property>
+   <widget class="QPushButton" name="btnAdd">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>181</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: gray;  
+    color: white;           
+    border: none;          
+    padding: 8px 16px;         
+    border-radius: 20px;       
+}
+
+
+QPushButton:hover {
+    background-color: #597d96;
+}
+
+
+QPushButton:pressed {
+    background-color: #FFF8E1;
+}</string>
+    </property>
+    <property name="text">
+     <string>Добавить</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDelete">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>10</y>
+      <width>111</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: #5c6466;
+	border-radius: 20px;
+}
+QPushButton:hover {
+    background-color: #330c18;
+}
+
+
+QPushButton:pressed {
+    background-color: #210405;
+}</string>
+    </property>
+    <property name="text">
+     <string>Удалить</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnChange">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>281</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: gray;  
+    color: white;             
+    border: none;             
+    padding: 8px 16px;         
+    border-radius: 20px;       
+}
+
+
+QPushButton:hover {
+    background-color: #597d96;
+}
+
+
+QPushButton:pressed {
+    background-color: #FFF8E1;
+}</string>
+    </property>
+    <property name="text">
+     <string>Изменить</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbObject">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>80</y>
+      <width>281</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color: #94a2a6;
+	color: black;
+	border-radius: 10px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbTypeS">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>301</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color: #94a2a6;
+	color: black;
+	border-radius: 10px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnStartBot">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>690</y>
+      <width>291</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: gray;  /* Цвет фона */
+    color: white;              /* Цвет текста */
+    border: none;              /* Убираем стандартную рамку */
+    padding: 8px 16px;         /* Отступы внутри */
+    border-radius: 20px;       /* Закругляем углы (10px - радиус) */
+}
+
+/* Стиль при наведении */
+QPushButton:hover {
+    background-color: #45a049;
+}
+
+/* Стиль при нажатии */
+QPushButton:pressed {
+    background-color: #3d8b40;
+}</string>
+    </property>
+    <property name="text">
+     <string>Запустить бота</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnUpdateWidget">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>690</y>
+      <width>291</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: gray;  /* Цвет фона */
+    color: white;              /* Цвет текста */
+    border: none;              /* Убираем стандартную рамку */
+    padding: 8px 16px;         /* Отступы внутри */
+    border-radius: 20px;       /* Закругляем углы (10px - радиус) */
+}
+
+/* Стиль при наведении */
+QPushButton:hover {
+    background-color: #45a049;
+}
+
+/* Стиль при нажатии */
+QPushButton:pressed {
+    background-color: #3d8b40;
+}</string>
+    </property>
+    <property name="text">
+     <string>Обновить список</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1380</x>
+      <y>20</y>
+      <width>331</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>qrL.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QChartView" name="chartView1">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>450</y>
+      <width>691</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QChartView {
+    background-color: transparent;  /* Прозрачный */
+}</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>591</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Статистика</string>
+    </property>
+    <widget class="QLabel" name="lblStatistics">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>571</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::TextFormat::RichText</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTableView" name="tblView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>111</y>
+      <width>591</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableView {
+    background-color: #FFF8E1;  /* Светло-жёлтый */
+    alternate-background-color: #2a3136;  /* Цвет чередующихся строк */
+	color: #1b2024;
+}</string>
+    </property>
+   </widget>
+   <widget class="QChartView" name="chartView2">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>450</y>
+      <width>421</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QChartView {
+    background-color: transparent;  /* Прозрачный */
+}</string>
+    </property>
+   </widget>
+   <widget class="QChartView" name="chartView3">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>10</y>
+      <width>751</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QChartView {
+    background-color: transparent;  /* Прозрачный */
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1735</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>qchartview</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
